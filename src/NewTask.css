@@ -1,0 +1,41 @@
+/* NewTask.css */
+
+.new-task-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.new-task-form input,
+.new-task-form select,
+.new-task-form textarea {
+    width: 100%;
+    /* Full width for all inputs */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Light border for inputs */
+    border-radius: 4px;
+}
+
+.new-task-form button {
+    margin-right: 10px;
+}
+
+.new-task-form button[type="submit"] {
+    background-color: #28a745;
+    /* Success button color for submit */
+    color: white;
+    /* White text for success button */
+}
+
+.new-task-form button[type="button"] {
+    background-color: #6c757d;
+    /* Secondary button color */
+    color: white;
+    /* White text for secondary button */
+}

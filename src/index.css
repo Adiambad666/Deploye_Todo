@@ -1,0 +1,43 @@
+/* styles.css */
+
+.header-container {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    /* Added vertical padding for better spacing */
+    display: flex;
+    justify-content: center;
+    /* Centers items horizontally */
+    align-items: center;
+    /* Centers items vertically */
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    /* Set a fixed height for the header */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    /* Centers items in the nav horizontally */
+    width: 100%;
+    /* Ensures nav takes full width */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Space between the items */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #e2e6ea;
+    /* Change background on hover */
+}
