@@ -54,11 +54,13 @@ const NewTask = ({ addTask, onCancel, initialData }) => {
                 value={assignedTo}
                 onChange={(e) => setAssignedTo(e.target.value)}
                 required
+                style={{ margin: '5px', width: '100%' }} // Added styling for visibility
             />
             <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
                 required
+                style={{ margin: '5px', width: '100%' }} // Added styling for visibility
             >
                 <option value="" disabled>Select Status</option>
                 <option value="Completed">Completed</option>
@@ -70,11 +72,13 @@ const NewTask = ({ addTask, onCancel, initialData }) => {
                 value={dueDate}
                 onChange={(e) => setDueDate(e.target.value)}
                 required
+                style={{ margin: '5px', width: '100%' }} // Added styling for visibility
             />
             <select
                 value={priority}
                 onChange={(e) => setPriority(e.target.value)}
                 required
+                style={{ margin: '5px', width: '100%' }} // Added styling for visibility
             >
                 <option value="" disabled>Select Priority</option>
                 <option value="Low">Low</option>
@@ -85,6 +89,7 @@ const NewTask = ({ addTask, onCancel, initialData }) => {
                 placeholder="Comments"
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
+                style={{ margin: '5px', width: '100%' }} // Added styling for visibility
             />
             <button type="submit" className="btn btn-success">
                 {initialData ? 'Update Task' : 'Add Task'}
