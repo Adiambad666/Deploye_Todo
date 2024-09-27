@@ -9,6 +9,15 @@ const NewTask = ({ addTask, onCancel, initialData }) => {
     const [priority, setPriority] = useState(initialData ? initialData.priority : '');
     const [comments, setComments] = useState(initialData ? initialData.comments : '');
 
+    const resetForm = () => {
+        setAssignedTo('');
+        setStatus('');
+        setDueDate('');
+        setPriority('');
+        setComments('');
+        onCancel();
+    };
+
     useEffect(() => {
         if (initialData) {
             setAssignedTo(initialData.assignedTo);
@@ -35,15 +44,6 @@ const NewTask = ({ addTask, onCancel, initialData }) => {
 
         addTask(newTask);
         resetForm();
-    };
-
-    const resetForm = () => {
-        setAssignedTo('');
-        setStatus('');
-        setDueDate('');
-        setPriority('');
-        setComments('');
-        onCancel();
     };
 
     return (
